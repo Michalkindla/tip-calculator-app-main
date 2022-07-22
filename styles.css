@@ -199,9 +199,9 @@ input[type=number] {
       grid-template-columns: auto;
         grid-template-rows: 1fr 1fr;
       }
+      .container{
+        width: 100%;
+      }
     }
 
       
-
-/* Tablets and under */
-/* @media (max-width: 768px) */
