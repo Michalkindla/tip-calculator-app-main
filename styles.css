@@ -1,0 +1,207 @@
+*{
+    --StrongCyan: hsl(172, 67%, 45%);
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+    --White:hsl(0, 0%, 100%);
+}
+body{
+    width: 100%;
+    background-color: var(--LightGrayishCyan);
+    overflow: hidden;
+    font-family: 'Space Mono', monospace;
+}
+.title{
+    text-transform: uppercase;
+    color: var(--GrayishCyan);
+    text-align: center;
+}
+h1{
+    font-size: 1.5rem;
+}
+p{
+    color: var(--GrayishCyan);
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.container{
+    margin-top: 100px;
+    background-color: var(--LightGrayishCyan);
+    width: 55%;
+    min-width: 750px;
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 1fr);
+    column-gap: 40px;
+}
+.left-side{
+    width: 350px;
+    height: 300px;
+    background-color: var(--White);
+}
+.right-side{
+    border-radius: 20px;
+    background-color: var(--VeryDarkCyan);
+    width: 350px;
+    height: 350px;
+}
+.card{
+    background-color: var(--White);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+.rightSideText{
+    font-size: 0.7rem;
+    float: left;
+    padding: 20px 20px;
+    color: var(--GrayishCyan);
+}
+.rightSideText::first-line{
+    font-size:1rem;
+    color: var(--White);
+}
+.rightNum{
+    padding: 10px 20px;
+    float: right;
+    font-size: 2.5rem;
+    color: var(--StrongCyan);
+}
+input{
+    font-family: 'Space Mono', monospace;
+}
+#reset{
+    width: 280px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: var(--LightGrayishCyan);
+    color: var(--DarkGrayishCyan);
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+#reset:disabled{
+    background-color: grey;
+}
+#subreset{
+    margin-top: 130px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row input{
+    width: 90px;
+    height: 30px;
+    background-color: var(--VeryDarkCyan);
+    color: var(--White);
+    border:none;
+    border-radius: 5px;
+    font-size: 1.5 rem;
+    font-weight: 200;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.row input:hover{
+    transform: scale(1.2);
+}
+
+
+
+#custom-tip{
+    width: 90px;
+    letter-spacing: 0.5px;
+}
+
+.wrapper img{
+    position: relative;
+    bottom: -32px;
+    left: 8px;
+   
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    text-align: right;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+::-webkit-input-placeholder { 
+    background-color: var(--VeryLightGrayishCyan);
+    color: var(--GrayishCyan);
+    height: 30px;
+    font-size: 1rem;
+    padding: 5px 15px;
+ }
+ 
+ :-moz-placeholder { 
+    background-color: var(--VeryLightGrayishCyan);
+ }
+ ::-moz-placeholder { 
+    background-color: var(--VeryLightGrayishCyan);
+ }
+ :-ms-input-placeholder { 
+    background-color: var(--VeryLightGrayishCyan);
+ }
+ .attribution{
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: var(--DarkGrayishCyan);
+ }
+ .attribution a:link{
+    text-decoration: none;
+    color: var(--DarkGrayishCyan);
+ }
+ .wrapper input:focus,
+ .wrapper input:valid{
+    color: var(--GrayishCyan);
+    height: 40px;
+    font-size: 1rem;
+ }
+ .row input:focus,
+ .row input:valid{
+    background-color: var(--LightGrayishCyan);
+    color: var(--DarkGrayishCyan);
+    font-size: 1rem;
+ }
+/* .buttons input:focus{
+    color
+} */
+ /* Mobile */
+@media (max-width: 500px){
+  .grid  {
+    display:grid;
+      grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+
+      
+
+/* Tablets and under */
+/* @media (max-width: 768px) */
